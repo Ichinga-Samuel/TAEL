@@ -1,0 +1,13 @@
+
+<form [formGroup]="urf" (ngSubmit)="createUser(urf.value)">
+  <label for="nm">Full Name</label>
+  <input type="text" placeholder="Enter your full name" [formControl]="urf.controls['name']" id="nm">
+  <label for="em">Email Address</label>
+  <input type="text" placeholder="Enter your Email Address" [formControl]="urf.controls['email']" id="em">
+  <label for="pw">Password</label>
+  <input type="text" placeholder="Create Password" [formControl]="urf.controls['password']" id="pw">
+  <label for="cp">Confirm Password</label>
+  <input type="text" placeholder="Confirm Password" [formControl]="urf.controls['copassword']" id="cp">
+  <div *ngIf="urf.hasError('pwdMatch', 'copassword') && urf.controls['copassword'].touched">Password Does Not match</div>
+</form>
+

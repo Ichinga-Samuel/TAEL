@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AfricanClassicsFront"
+    }
+  },
+  "defaultProject": "AfricanClassicsFront",
+  "cli": {
+    "analytics": "e72a914f-f848-42fa-9580-06cd24b698a3"
+  }
 }
